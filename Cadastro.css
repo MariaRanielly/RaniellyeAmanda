@@ -1,0 +1,63 @@
+/*Define estilos para o corpo da página*/
+body {
+  font-family: 'Arial', sans-serif;/*Define as cores de fontes para o corpo da página*/
+  background: linear-gradient(45deg, #ffa7ff, #ff8ef0, #ff00d4, #8a0077, #510043);/*Cria um plano de fundo com gradiente*/
+  margin: 0;/*Remove margens padrão da página*/
+  padding: 0;/*Remove preenchimento padrão da página*/
+  display: flex;/*Usa um layout flexível para o corpo da página*/
+  justify-content: center;/*Centraliza o conteúdo horizontalmente*/
+  align-items: center;/*Centraliza o conteúdo verticalmente*/
+  min-height: 100vh;/*Define a altura mínima da vizualização para ocupar a tela inteira*/
+}
+/*Define estilos para o contêiner principal*/
+.container {
+    background-color: #fff;/*Define a cor de fundo do contêiner principal como branco*/
+    border-radius: 10px;/*Adiciona cantos arredondados com raio de 10px*/
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);/*Adiciona uma sombra suave ao redor do contêiner*/
+    display: flex;/*Usa um layout flexível para o contêiner principal*/
+    justify-content: space-between;/*Distribui o espaço entre os elementos filhos*/
+    align-items: center;/*Centraliza o conteúdo verticalmente*/
+    padding: 20px;/*Adiciona espaçamento interno de 20px*/
+    width: 800px;/*Define a largura do contêiner principal como 800px*/
+}
+/*Define estilos para o formulário dentro do contêiner*/
+.form {
+    flex: 1;/*Permite que o formulário cresça para preencher o espaço disponível*/
+    padding: 20px;/*Adiciona espaçamento interno de 20px no formulário*/
+}
+/*Define estilos para o titulo do formulário dentro do contêiner*/
+.form h2 {
+    color: #333;/*Define a cor do texto do titulo como cinza escuro*/
+}
+/*Define estilos para campos de entrada de texto e email no formulário*/
+.form input[type="text"], .form input[type="email"] {
+    width: 100%;/*Define a largura das entradas como 100% do contêiner pai*/
+    padding: 10px;/*Adiciona preenchimento interno de 10px*/
+    margin: 10px 0;/*Adiciona margem superior e inferior de 10px*/
+    border: 1px solid #ccc;/*Define uma borda de 1px com cor cinza claro*/
+    border-radius: 5px;/*Adiciona cantos arredondados com raio de 5px*/
+}
+/*Define estilos para o botão de envio do formulário*/
+.form input[type="submit"] {
+    background: #4f0079;/*Define a cor de fundo do botão de envio*/
+    color: #fff;/*Define a cor do texto como branco*/
+    border: none;/*Remove a borda do botão*/
+    border-radius: 5px;/*adiciona cantos arredondados com raio de 5px*/
+    padding: 10px 20 px;/*Adiciona preenchimento interno de 10px na vertical e 20px na horizontal*/
+    cursor: pointer;/*Altera o cursor para uma mão quando passa sobre o botão*/
+}
+/*Define estilos para o botão de envio do formulário quando o cursor passa sobre ele*/
+.form input[type="submit"]:hover {
+    background: #b700ff;/*Altera a cor de fundo quando o cursor passa sobre o botão*/
+}
+/*Define estilos para a seção de imagem no contêiner*/
+.image {
+    flex: 1;/*Permite que a seção de imagem cresça para preencher o espaço disponível*/
+    text-align: center;/*Centraliza o texto horizontalmente*/
+    background-image: url(https://cdn.dribbble.com/users/1790153/screenshots/10720154/media/886fe1d5d86d51f773294f1705b19268.png);/*Define uma imagem de fundo*/
+}
+/*Define estilos para imagens dentro da seção de imagem*/
+.image img {
+    max-width: 100%;/*Define a largura máxima da imagem como 100% do contêiner pai*/
+    height: auto;/*Mantém a proporção da imagem para evitar distorções*/
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Música</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="Páginainicial.css">
+</head>
+<body>
+	<div col-md-12>
+	<!--Usamos o Carrossel de fotos como um conteiner (apresentação de slides) de imagens para deixar o site mais interativo!-->
+	<!--Usamos o div para fazer uma divisão para facilitar na estilização dos blocos!-->
+	<div class="CarrosselDeFotos">
+		<img src="imagens/AnaCastela.jpg" alt="imagem 1">
+		<img src="imagens/DennisEkevin.jpg">
+        <img src="imagens/ED.jpg">
+        <img src="imagens/Harry.jpg">
+        <img src="imagens/Livinho.jpg">
+        <img src="imagens/McPedrinho.jpg">
+        <img src="imagens/Miley.jpg">
+        <img src="imagens/rosaEalpha.jpg">
+        <img src="imagens/selenaErema.jpg">
+        <img src="imagens/simone.jpg">
+	</div>
+	<!--Usamos o header como um cabeçalho!-->
+	<header>
+		<!--Usamos o h1 para criar um titulo!-->
+		<h1>Bem vindo(a) ao nosso site sobre Música</h1>
+    </header>
+	<!--Usamos o main para definir o conteúdo principal!-->
+	<main>
+	<button type="button" class="btn btn-outline-light"><a href="Músicasmaistocadas.html">Músicas mais tocadas no momento</a></button>
+	<button type="button" class="btn btn-outline-light"><a href="Nossa playlist.html">Nossa playlist</a></button>
+	    <div>
+		<!--Usamos o h2 para criar um subtitulo!-->
+		<h2>Um pouco sobre nosso site</h2>
+		</div>
+		<div>
+		<!--Usamos a tag p para fazer um pequeno texto sobre nosso site!-->
+		<p>Bem-vindo(a) ao nosso site sobre música, o lugar perfeito para todos os amantes da arte sonora e para aqueles que desejam explorar novos ritmos e melodias!
+		   Aqui, a música ganha vida e se torna uma experiência envolvente e enriquecedora.
+		   Para começar, nossa página inicial é um verdadeiro convite ao mundo da música. Apresentamos as últimas tendências, e nossas faixas preferidas, tudo num design atraente
+		   e intuitivo que o fará mergulhar na experiência musical desde o primeiro instante.
+		   Estamos entusiasmados em receber você neste incrivel universo musical. Então, sintonize-se, aumente o volume e deixe a música levar você a uma jornada inesquecível!.
+		   Aproveite cada nota e desfrute da magia da música em sua plenitude. Seja bem-vindo(a)!</p>
+		<h2>Um pouco sobre a história da música</h2>
+		<p>A música é uma das formas de arte mais antigas da humanidade. Desde os primórdios os homens produziam diversas formas de sonoridade. A música é uma expressão artística
+		   que envolve a harmonia entre os sons, o ritmo, a melodia e a voz. Todos esses elementos são importantes e podem nos transportar para outro tempo e espaço,
+		   resgatar memórias e reacender emoções. A história da música é muito antiga e está presente em diversas culturas e épocas. Desde a pré-história, há mais de 50 mil anos,
+		   os seres humanos começaram a desenvolver ações sonoras baseadas na observação dos fenômenos da natureza. Os ruídos das ondas quebrando na praia, os trovões, a comunicação
+		   entre os animais, o barulho do vento balançando as árvores, as batidas do coração; tudo isso influenciou as pessoas a também explorarem os sons que seus próprios corpos 
+		   produziam. Como, por exemplo, os sons das palmas, dos pés batendo no chão, da própria voz, entre outros. Nessa época, tais experimentações não eram consideradas arte 
+		   propriamente e estavam relacionadas à comunicação, aos ritos sagrados e à dança.</p>
+		<p> Ao longo dos séculos, a música evoluiu muito e se tornou uma forma de arte cada vez
+		   mais complexa. Na Grécia Antiga e em Roma, por exemplo, a música era muito presente na vida cotidiana das pessoas. Já no Egito Antigo, ainda em 4.000 a.C., a música
+		   era muito presente e configurava um importante elemento religioso. Na região de Mesopotâmia, localizada entre os rios Tigre e Eufrates, habitavam os povos sumérios, 
+		   assírios e babilônios. Foram encontradas harpas de 3 a 20 cordas na região onde os sumérios viviam e estima-se que sejam objetos com mais de 5 mil anos. Na Ásia - em
+		   torno de 3.000 a.C. - a atividade musical prosperou na Índia e China. Nessas regiões, ela também estava fortemente relacionada à espiritualidade.</p>
+		<p>A música continuou evoluindo ao longo dos séculos até chegar aos nossos dias com as características que possui hoje no Ocidente. A música é uma forma de arte que pode
+		   ser apreciada em diversos gêneros musicais como rock, pop, jazz, blues, samba, MPB (Música Popular Brasileira), clássica entre outros.</p>
+		   <!--Este é um contêiner HTML com um formulário para coletar informações sobre preferências musicais-->
+           <div class="container">
+            <h2>Agora queremos fazer uma pequena pesquisa com você sobre seus gostos musicais, sinta-se a vontade para responder</h2>
+            <br>
+            <h3>Sobre seu gosto musical responda:</h3>
+            <form>
+                <div class="form-group">
+                  <label for="genero">Qual seu gênero musical favorito?</label>
+                  <input type="genero" class="form-control" id="genero" aria-describedby="genero" placeholder="Digite aqui">
+                </div>
+                <div class="form-group">
+                  <label for="cantor">Qual seu cantor favorito?</label>
+                  <input type="cantor" class="form-control" id="cantor" placeholder="Digite aqui">
+                </div>
+                <div class="form-group">
+                    <label for="musica">Qual sua música favorita?</label>
+                    <input type="musica" class="form-control" id="musica" aria-describedby="musica" placeholder="Digite aqui">
+                  </div>
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Qual gênero musical você não gosta?</label>
+                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option value="1">Pop</option>
+                    <option value="2">Rock</option>
+                    <option value="3">Pagode</option>
+                    <option value="3">Reggae</option>
+                    <option value="3">Funk</option>
+                    <option value="3">Eletrônica</option>
+                </select>
+                <div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        </main>      
+	<!--Usamos o footer para criar um rodapé na página!-->
+	<footer>
+		<p>Desenvolvido por Amanda e Ranielly</p>
+	</footer>   
+</body>
+</html>

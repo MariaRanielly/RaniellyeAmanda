@@ -1,0 +1,253 @@
+/*Código do corpo da página*/
+body {
+	/*O margin é usado para definir as 4 margens do elemento de uma vez só*/
+	margin: 50px;
+	/*O padding serve para definir a distância interna entre um elemento e sua borda*/
+	padding: 0;
+	/*O font-family permite fazermos uma lista com familias de fontes para elementos especificos*/
+	font-family: Arial, sans-serif;
+	/*O background-color é usado para especificar a cor de plano de fundo em paragrafos, tabelas ou qualquer outra parte do HTML*/
+	background-color: #FFF0F5;
+}
+
+header, nav, main, footer {
+	padding: 100px;
+}
+
+header {
+	background-color: #000000;
+	/*O color serve para definir a cor de um determinado elemento ou de uma página inteira, nesse caso usamos para definir a cor de um elemento*/
+	color: #D8BFD8;
+	text-align: center;
+}
+
+button {
+	margin: 20px;
+	float: center;
+}
+
+.btn-secondary {
+	width: 300px;
+	height: 40px;
+	color: #0c0c0c;
+	border-radius: 5px;
+	padding: 10px 25px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	 box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+	 7px 7px 20px 0px rgba(0,0,0,.1),
+	 4px 4px 5px 0px rgba(0,0,0,.1);
+	outline: none;
+	background-color: #f0ecfc;
+    background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+	color: #000000;
+}
+
+nav ul {
+	list-style-type: none;
+	/*O list-style-type define o estilo do marcador de uma lista*/
+	margin: 50px;
+	padding: 100px;
+}
+
+nav ul li {
+	display: inline;
+	/*O display serve para especificar um tipo de caixa de redenrização usda no elemento*/
+	margin-right: 50px;
+    /*margin-right é usada para definir a margem direita do elemento*/
+}
+
+nav ul li a {
+	color: #000007;
+	text-decoration: none;
+	/*O text-decoration é usado para decorar o texto com diferentes tipos de linhas*/
+}
+
+nav ul li a:hover {
+	color: #010104;
+}
+
+h1, h2 {
+	margin: 0;
+}
+
+main {
+	background-color: #D8BFD8;
+}
+
+footer {
+	background-color: #000000;
+	color: #D8BFD8;
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: 10 px auto;
+	max-width: 100%;
+	/*O max-width é usado para definir a largura maxima de um elemento*/
+	height: auto;
+	/*O height serve para definir o tamanho dos elementos*/
+}
+
+/*Código usado no plano de fundo gradiente que fica mudando de cores*/
+body {
+	background: linear-gradient(-45deg,#FFE4E1,#DDA0DD,#8B008B,#e73c7e,#FF00FF,#FFB6C1);
+	background-size: 400% 400%;
+	/*O background-size serve para definir o tamanho da imagem de fundo de um elemento*/
+	animation: gradient 10s ease infinite;
+	/*O animation serve para animar os elementos*/
+	height: 100vh;
+}
+
+@keyframes gradient {
+/*O @Keyframes é usado para especificar a regra da animação*/
+	0% {
+		background-position: 0% 50%;
+		/*O background-position é usado para definir a posição do elemento*/
+	}
+	
+	50% {
+		background-position: 100% 50%;
+	}
+	
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/*Código usado no carrossel de fotos*/
+.CarrosselDeFotos {
+/*O carrossel de fotos serve como um conteiner (apresentação de slides) de imagens*/
+	display: flex;
+	overflow: hidden;
+	/*O overflow serve para não deixar que os coteúdos ultrapassem os limites desejados*/
+	animation: CarrosselDeFotosAnimation 20s linear infinite;
+}
+
+.CarrosselDeFotos img {
+	border-radius: 20px;
+	/*O border-radius serve para definir o quão arredondadas as bordas do elemento vai ficar*/
+	margin: 5px 10px 10px 5px;
+	width: 7%;
+	/*O width determina a largura dos elementos*/
+	height: auto;
+}
+
+
+@keyframes CarrosselDeFotosAnimation {
+	0% {
+		transform: translateX(0);
+		/*O transform serve para modificar o espaço e o translateX serve para mover um elemento horizontalmente*/
+	}
+	
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+  float: center;
+}
+.custom-btn {
+  width: 300px;
+  height: 40px;
+  color: #eecf1a;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn-8 {
+  background-color: #f0ecfc;
+background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-8 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-8:before,
+.btn-8:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #c797eb;
+  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+  transition: all 0.3s ease;
+}
+.btn-8:before{
+   height: 0%;
+   width: 2px;
+}
+.btn-8:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-8:hover:before {
+  height: 100%;
+}
+.btn-8:hover:after {
+  width: 100%;
+}
+.btn-8:hover{
+  background: transparent;
+}
+.btn-8 span:hover{
+  color: #c797eb;
+}
+.btn-8 span:before,
+.btn-8 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #c797eb;
+  transition: all 0.3s ease;
+}
+.btn-8 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-8 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-8 span:hover:before {
+  height: 100%;
+}
+.btn-8 span:hover:after {
+  width: 100%;
+}

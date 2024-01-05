@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Cadastro.css">
+        <title>Formulário de Cadastro</title>
+    </head>
+    <body>
+    <!--Um contêiner HTML que envolve todo o conteúdo da página-->
+    <div class="container">
+        <!--Uma seção de formulário para o cadastro de usuários-->
+        <div class="form">
+            <h2>Casdratre-se para ter acesso ao nosso site</h2>
+            <!--Um formulário HTML com ação para "Páginainicial.html(Página de destino após o envio)"-->
+            <form action="Páginainicial.html">
+                <!--Campo de entrada de texto para o nome do usuário-->
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                <br>
+                <!--Campo de entrada de email para o endereço de email do usuário-->
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <br>
+                <!--Campo de entrada de texto para o número de telefone do usuário-->
+                <input type="text" id="numero" name="numero" placeholder="Número de telefone" required>
+                <br>
+                <!--Botão de envio do formulário-->
+                <input type="submit" value="Cadastrar">
+            </form>
+        </div>
+        <!--Uma seção de imagem que exibe uma imagem de fundo-->
+        <div class="image">
+            <img src="imagens/music.png" alt="Imagem de fundo">
+        </div>
+        </div>
+        <script>
+            //JavaScript para redirecionar para a página de destino após o envio do for((mulário.
+            document.getElementById("cadastroForm").addEventListener("submit", function() {
+            window.location.href="Páginainicial.html";
+            });
+        </script>
+</body>
+</html>
